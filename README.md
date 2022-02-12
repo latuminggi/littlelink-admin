@@ -9,6 +9,7 @@ LittleLink Admin is an admin panel for [littlelink] that provides you a website 
 - raising important links on the page
 - ordering links (new)
 - custom link option (new)
+- Social Share Preview for individual users (new)
 - counting clicks
 - managing users and pages and links
 - and ...
@@ -40,6 +41,8 @@ php artisan db:seed
 php artisan db:seed --class="AdminSeeder"
 php artisan db:seed --class="PageSeeder"
 php artisan db:seed --class="ButtonSeeder"
+
+php artisan key:generate
 php artisan serve (optional)
 ```
 
