@@ -11,7 +11,7 @@
   <!-- This shows a preview for title, description and avatar image of users profiles if shared on social media sites -->
 
     <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="{{ config('app.url') }}/@littlelink_name"">
+    <meta property="og:url" content="{{ config('app.url') }}/@littlelink_name">
     <meta property="og:type" content="website">
     <meta property="og:title" content="{{ $userinfo->littlelink_name }}">
     <meta property="og:description" content="{{ $userinfo->littlelink_description }}">
@@ -24,7 +24,7 @@
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:domain" content="{{ config('app.url') }}/@littlelink_name">
-    <meta property="twitter:url" content="https://prieber.com/socials/index.php/">
+    <meta property="twitter:url" content="{{ config('app.url') }}/@littlelink_name">
     <meta name="twitter:title" content="{{ $userinfo->littlelink_name }}">
     <meta name="twitter:description" content="{{ $userinfo->littlelink_description }}">
     @if(file_exists(public_path("img/$littlelink_name" . ".png" )))
