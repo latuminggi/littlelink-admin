@@ -60,14 +60,11 @@ class UserController extends Controller
     {
         $request->validate([
             'link' => 'required',
-            'title' => '',
+            'title' => 'required',
             'button' => 'required'
         ]);
 
         $link = $request->link;
-        if ($request->title == '')
-        $title = $request->button;
-        else
         $title = $request->title;
         $button = $request->button;
 
